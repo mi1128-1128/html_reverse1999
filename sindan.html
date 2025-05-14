@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャラクター診断</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body background="img/1999.png">
+    <div class="box">
+    </div>
+    <header class="header">
+
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/index.html">リバース1999って？</a></li>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/sindan.html">キャラクター診断</a>
+                </li>
+                <li><a href="https://re1999.bluepoch.com/jp/" target="_blank">公式HP</a></li>
+                <li><a href="https://x.com/Reverse1999_JP" target="_blank">公式X</a></li>
+                <li><a href="https://reverse1999.wikiru.jp/" target="_blank">非公式wiki</a></li>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/form.html">サイトアンケート</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+
+        <h1>あなたにピッタリなリバース1999のキャラクターは？</h1>
+        <p class="marker01">「リバース1999」のキャラクターの中であなたにぴったりなキャラクターは誰？<br>さっそく診断してみよう！</p><br>
+        <!-- <p>さっそく診断してみよう！</p> -->
+
+
+
+
+
+        <div class="container">
+            <div
+                style="background: #525250; opacity: 0.15; transform: rotate(-2deg); width: 35%; height: 40px; margin: 0 auto -1em auto;">
+            </div>
+
+            <div style="background: #f4f0ef; padding: 25px 20px 15px; color: #000000;">
+                <div class="chose_box">
+                    <div id="q_01" class="fit">
+                        <p>質問1 <br>元気なキャラが好きだ</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_02">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_03">NO</a></p>
+                        </ul>
+
+                    </div>
+                    <!-- 最初の選択肢 -->
+
+                    <div id="q_02" style="display: none;">
+                        <p>質問2<br>少し世間知らずな純粋さの子であればあるほど可愛い</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_04">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_05">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div id="q_05" style="display: none;">
+                        <p>質問3<br>色々な意味でちゃっかりしている子が好きだ</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_06">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_07">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div id="q_07" style="display: none;">
+                        <p>質問4<br>負けず嫌いでプライドが高めの子が好きだ</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_08">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_09">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div id="q_03" style="display: none;">
+                        <p>質問2<br>大人びた、もしくは年上のキャラクターが好きだ</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_10">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_11">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div id="q_10" style="display: none;">
+                        <p>質問3<br>過去に傷を抱えるキャラクターが気になってしまう</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_12">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_13">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div id="q_13" style="display: none;">
+                        <p>質問4<br>新しいトレンドが好きで、変化が好きだ</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_14">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_15">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div id="q_11" style="display: none;">
+                        <p>質問3<br>人間以外のキャラクターに惹かれる（無機物・動物など）</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_16">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_17">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div id="q_17" style="display: none;">
+                        <p>質問4<br>口が悪いキャラクターが好きだ</p>
+                        <ul class="flexbox fw">
+                            <p class="even"><a class="btn" href="#q_18">YES</a></p>
+                            <p class="odd"><a class="btn" href="#q_19">NO</a></p>
+                        </ul>
+                    </div>
+
+                    <div class="answer" id="q_04" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">サザビーです！！</p>
+                        <div class="iframe-container">
+
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/MI_2RBR_1QM"
+                                title="『リバース：1999』サザビーPV「童心そのもの」" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+                    <div class="answer" id="q_06" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">リー・アンアンです！！</p>
+                        <div class="iframe-container">
+
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/39FSHNXVDJU"
+                                title="『リバース：1999』リー・アンアン   「チョコレートは幽霊退治ができるだけじゃなくて、おやつにもなるでしょ？」（CV. #佐倉綾音）"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn"
+                                href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/sindan.html">最初から診断する</a>
+                        </p>
+                    </div>
+
+                    <div class="answer" id="q_08" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">マチルダです！！</p>
+                        <div class="iframe-container">
+
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/EN3tPpR4sPA"
+                                title="『リバース：1999』マチルダ   「最強！最高！それがわたし、マチルダ！」（CV. #伊藤彩沙）" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+
+                    <div class="answer" id="q_09" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">レグルスです！！</p>
+                        <div class="iframe-container">
+
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/C94Dpi23q-o"
+                                title="『リバース：1999』レグルスPV「逃げろレグルス！」" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+
+                    </div>
+
+                    <div class="answer" id="q_12" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">ドルーヴィスIIIです！！</p>
+                        <div class="iframe-container">
+
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/JBWH2tnxGl8"
+                                title="『リバース：1999』ドルーヴィスⅢ「初めて植物に触れたときから、わたしが彼らの仲間であるということは知っていたわ」（CV. #石川由依）"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+                    <div class="answer" id="q_14" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">ニューバベルです！！</p>
+                        <div class="iframe-container">
+
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/02wElQ7m0x0"
+                                title="【コスチューム紹介】ニューバベル「善意の値上げ」（CV.#内田真礼）" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+                    <div class="answer" id="q_15" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">エターニティです！！</p>
+                        <div class="iframe-container">
+
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/OD7wc50C3uA"
+                                title="『リバース：1999』エターニティ   「このお年寄りに、席を譲ってくれない？」（CV. #ファイルーズあい）" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+                    <div class="answer" id="q_16" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">ナイトです！！</p>
+                        <div class="iframe-container">
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/4IF7VEa31yw"
+                                title="『リバース：1999』ナイト「このまま雨が止まなければ、私はこの世で初めての『鎧の錆で命果てた騎士』になってしまうな」（CV. #速水奨）"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+                    <div class="answer" id="q_18" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">メディスンポケットです！！</p>
+
+                        <div class="iframe-container">
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/L3UzFmxXeRQ"
+                                title="『リバース：1999』メディスンポケット「——このトーストはオレがもらう。おまえはもう一枚焼け」（CV. #花江夏樹）" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+                    <div class="answer" id="q_19" style="display: none;">
+                        <p>あなたにおすすめなのは…</p>
+                        <p class="slash">ソネットです！！</p>
+                        <div class="iframe-container">
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/fOCm9Lly5mo"
+                                title="『リバース：1999』ソネットPV「詩歌の外」" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <br>
+                        <p><a class="btn" href="#q_01">最初から診断する</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".btn").on("click", function () {
+                // ボタンを押したら実行する機能は以下のこれこれだよ～
+                $(this).closest("div").css("display", "none");
+                // 押されたボタンの親要素のdivを探すよ！そして、その表示を丸ごと消すよ！→回答した設問は消すってこと
+                id = $(this).attr("href");
+                $(id).addClass("fit").show("slow");
+                // そして選んだ回答（href）のidを探して該当の場所をゆっくり（slow）表示するよ！
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // ページが完全に読み込まれたら以下の動作をしてね！
+            function adjustBodyPadding() {
+                // メニューとの余白を調整するよ
+                let menuHeight = document.querySelector(".header").offsetHeight;
+                // ヘッダー（メニュー）の高さを取得
+                document.body.style.paddingTop = menuHeight + "px";
+                // それが終わったら文章部分（body）にそれだけ余白を頭に足してね！→これで被ることがない
+            }
+
+            adjustBodyPadding(); // 初回実行
+            window.addEventListener("resize", adjustBodyPadding);
+            //もし途中で 画面サイズ変更されたら上のやつをもう一回やってね！
+        });
+    </script>
+</body>
+
+</html>

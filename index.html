@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リバース1999って？</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body background="img/1999.png">
+    <div class="box">
+    </div>
+    <header class="header">
+
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/index.html">リバース1999って？</a></li>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/sindan.html">キャラクター診断</a>
+                </li>
+                <li><a href="https://re1999.bluepoch.com/jp/" target="_blank">公式HP</a></li>
+                <li><a href="https://x.com/Reverse1999_JP" target="_blank">公式X</a></li>
+                <li><a href="https://reverse1999.wikiru.jp/" target="_blank">非公式wiki</a></li>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/form.html">サイトアンケート</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class="container">
+            <div class="background-bar"></div>
+            <div class="diagnosis-box">
+
+                <div class="what_reverse">
+                    <h1>リバース1999って？</h1>
+                    <p class="marker01">『リバース：1999』は、BLUEPOCHが手掛ける世紀末タイムリバースRPG。<br>
+                        1999年から時代が進まず旧時代へと「巻き戻る」世界で、
+                        時代の観測者である「タイムキーパー」として時代の波を歩き、
+                        時代の逆行をもたらす「ストーム」の謎を探っていきます。
+                    </p>
+
+                    <div class="iframe-container">
+                        <iframe width="914" height="514" src="https://www.youtube.com/embed/0iru_sRX0ao"
+                            title="『リバース：1999』ティザーPV" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <p class="marker01">
+                        映画のように重厚なストーリーと音楽、
+                        様々な時代をリアルに描く芸術的でレトロなビジュアル。<br>
+                        そして豪華声優陣が命を吹き込む個性豊かな登場人物たちが、
+                        『リバース：1999』のノスタルジックな世界へとプレイヤーを誘います。
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+                function adjustBodyPadding() {
+                    let menuHeight = document.querySelector(".header").offsetHeight;
+                    document.body.style.paddingTop = menuHeight + "px";
+                }
+
+                adjustBodyPadding(); // 初回実行
+                window.addEventListener("resize", adjustBodyPadding); // 画面サイズ変更時に再計算
+            });
+        </script>
+    </body>
+
+</html>

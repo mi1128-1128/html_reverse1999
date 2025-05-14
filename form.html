@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイトアンケート</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body background="img/1999.png">
+    <div class="box">
+    </div>
+    <header class="header">
+
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/index.html">リバース1999って？</a></li>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/sindan.html">キャラクター診断</a>
+                </li>
+                <li><a href="https://re1999.bluepoch.com/jp/" target="_blank">公式HP</a></li>
+                <li><a href="https://x.com/Reverse1999_JP" target="_blank">公式X</a></li>
+                <li><a href="https://reverse1999.wikiru.jp/" target="_blank">非公式wiki</a></li>
+                <li><a href="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/form.html">サイトアンケート</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p class="marker01">以下のアンケートにご協力をお願いいたします</p>
+    </div>
+
+    <div class="container">
+
+        <div class="background-bar"></div>
+        <div class="diagnosis-box">
+            <form action="http://127.0.0.1:5500/WebContent/WEB-INF/Practice/thanks.html" method="get">
+
+                <p class="q">Q1 性別<br>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="sex" value="1">男性
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="sex" value="2">女性
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="sex" value="3">その他
+                    </label>
+                </p>
+
+                <br>
+
+                <p class="q">Q2 ご年齢<br>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="age" value="10">10代
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="age" value="20">20代
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="age" value="30">30代
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="age" value="40">40代
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="age" value="50">50代以上
+                    </label>
+                </p>
+
+                <br>
+                <p class="q">Q3 1か月あたりのソーシャルゲームへの課金額<br>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="billing" value="0">無課金
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="billing" value="0.5">～5,000円
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="billing" value="1">～1万円
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="billing" value="3">～3万円
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="radio" name="billing" value="5">～5万円以上
+                    </label>
+                </p>
+                <br>
+                <p class="q">Q4 ガチャを引くときに特に重視すること <small class="text">※複数選択可能</small><br>
+                    <label class="radio-inline">
+
+                        <input type="checkbox" name="billing" value="0">キャラクターの現環境での強さ
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="checkbox" name="billing" value="0.5">キャラクターの見た目
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="checkbox" name="billing" value="1">キャラクターの性格
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="checkbox" name="billing" value="3">特に気にしていない（もしくは全部引く）
+                    </label>
+                    <label class="radio-inline">
+
+                        <input type="checkbox" name="billing" value="5">その他
+                    </label>
+                </p>
+                <br>
+                <p class="q">Q5 このゲームの期待している点/改善点（自由記載）<br>
+
+                    <textarea name="message" id="message" class="form-control" rows="10"></textarea>
+
+                </p>
+
+                <div>
+                    <button type="submit" class="btn btn-default">回答する</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            function adjustBodyPadding() {
+                let menuHeight = document.querySelector(".header").offsetHeight;
+                document.body.style.paddingTop = menuHeight + "px";
+            }
+
+            adjustBodyPadding(); // 初回実行
+            window.addEventListener("resize", adjustBodyPadding); // 画面サイズ変更時に再計算
+        });
+    </script>
+</body>
+
+</html>

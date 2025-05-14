@@ -1,0 +1,203 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: dimgray;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: dimgray;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+/* 修正: ここで flex が適用されるようにする */
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.header nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+/* スマホ用の調整 */
+@media screen and (max-width: 768px) {
+    .header nav {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav li {
+        margin: 10px 0;
+    }
+}
+
+
+body {
+    /* padding-top: 70px; */
+    /* padding-top: 150px; */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.562);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+
+.marker01 {
+    color: white;
+    /* 文字色を白に */
+    text-decoration: none;
+    /* 既存の下線を消す */
+    position: relative;
+    /* 疑似要素を使うため */
+}
+
+.marker01::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    /* 下線の太さを調整 */
+    background-color: #DB7093;
+    /* 下線の色 */
+}
+
+.container {
+    max-width: 800px;
+    /* 適当な幅を設定 */
+    margin: 0 auto;
+    /* ブロック要素を中央に */
+    text-align: center;
+    /* テキストを中央寄せ */
+
+}
+
+.chose_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 選択肢ボタンを中央寄せ */
+
+}
+
+.chose_box p {
+    font-weight: bolder;
+}
+
+.fit {
+    position: relative;
+    /* 絶対位置ではなく、通常のレイアウトで配置 */
+    margin-top: 10px;
+    /* ヘッダーとの間隔を確保 */
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    /* YES/NO ボタンを中央配置 */
+    gap: 100px;
+    /* ボタン間の余白 */
+}
+
+.answer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    /* 結果が表示されたときに十分なスペースを確保 */
+}
+
+.answer iframe {
+    margin-top: 10px;
+    /* 余白を追加 */
+}
+
+.slash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: bolder;
+}
+
+.slash::before,
+.slash::after {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+    margin: 0px 4px 4px;
+}
+
+.slash::before {
+    transform: rotate(45deg);
+}
+
+.slash::after {
+    transform: rotate(-45deg);
+}
+
+.iframe-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    background-color: #fff;
+    border: solid 2px #c71585;
+    color: #c71585;
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1em;
+
+}
+
+.btn:hover {
+    color: #c71585;
+    background-color: #fff0f5;
+
+}
